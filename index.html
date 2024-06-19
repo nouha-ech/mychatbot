@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div id="chatbotButton" onclick="toggleChat()"><i class="fa-solid fa-question" style="color: #ffffff;"></i></div>
+    <div id="chatContainer" class="chat-container hidden">
+        <div id="chatbox">
+            <div class="message bot">Salut ! Je suis Kiki, votre chatbot. Comment puis-je vous aider aujourd'hui ?</div>
+        </div>
+        <input type="text" id="userInput" placeholder="Tapez votre message ici..." onkeypress="return checkEnter(event)">
+        <div id="suggestions"></div>
+        <button onclick="sendMessage()">Envoyer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
